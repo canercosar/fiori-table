@@ -1,0 +1,50 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="zzfragment1.display"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Fragment Program">
+		<content>
+
+			<Table items="{/universitystudent}" mode="SingleSelectMaster"
+				select="handleItemPress">
+
+				<columns>
+
+					<Column>
+						<Text text="StudentName"></Text>
+					</Column>
+
+					<Column>
+						<Text text="StudentSurname"></Text>
+					</Column>
+
+					<Column>
+						<Text text="StudentGender"></Text>
+					</Column>
+
+					<Column>
+						<Text text="BirthDate"></Text>
+					</Column>
+
+				</columns>
+				
+				<items>
+				
+				<ColumnListItem>
+				
+				<cells>
+				<Text text="{Sname}" />
+				<Text text="{Ssurname}" />
+				<Text text="{Sgender}" />
+				<Text text="{Sbirthdate}" />
+				</cells>
+				
+				</ColumnListItem>
+				
+				</items>
+
+			</Table>
+
+		</content>
+	</Page>
+</core:View>
